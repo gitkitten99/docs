@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "mint",
   "name": "WTF IS AI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1DA1F2",
+    "light": "#A4D9F9",
+    "dark": "#0d8ddb"
   },
   "favicon": "/favicon.svg",
   "navigation": {
