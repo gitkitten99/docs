@@ -3,9 +3,7 @@
   "theme": "mint",
   "name": "WTF IS AI",
   "colors": {
-    "primary": "#1DA1F2",
-    "light": "#A4D9F9",
-    "dark": "#0d8ddb"
+    "primary": "#1DA1F2"
   },
   "favicon": "/favicon.svg",
   "navigation": {
