@@ -8,7 +8,6 @@
     "dark": "#0d8ddb"
   },
   "favicon": "/favicon.svg",
-
   "navigation": {
     "tabs": [
       {
@@ -16,7 +15,9 @@
         "groups": [
           {
             "group": "Hey",
-            "pages": ["index"]
+            "pages": [
+              "index"
+            ]
           }
         ]
       },
@@ -25,7 +26,10 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["quickstart", "development"]
+            "pages": [
+              "quickstart",
+              "development"
+            ]
           },
           {
             "group": "Essentials",
@@ -45,46 +49,37 @@
         "groups": [
           {
             "group": "ChatGPT",
-            "pages": ["big-5/chatgpt/introduction"]
+            "pages": [
+              "big-5/chatgpt/introduction"
+            ]
           },
           {
             "group": "Gemini",
-            "pages": ["big-5/gemini/introduction"]
+            "pages": [
+              "big-5/gemini/introduction"
+            ]
           },
           {
             "group": "Claude",
-            "pages": ["big-5/claude/introduction"]
+            "pages": [
+              "big-5/claude/introduction"
+            ]
           },
           {
             "group": "Perplexity",
-            "pages": ["big-5/perplexity/introduction"]
+            "pages": [
+              "big-5/perplexity/introduction"
+            ]
           },
           {
             "group": "Grok",
-            "pages": ["big-5/grok/introduction"]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": ["api-reference/introduction"]
-          },
-          {
-            "group": "Endpoint Examples",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "big-5/grok/introduction"
             ]
           }
         ]
       }
     ],
-
     "global": {
       "anchors": [
         {
@@ -105,15 +100,16 @@
       ]
     }
   },
-
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.png"
   },
-
   "navbar": {
     "links": [
-      { "label": "Support", "href": "mailto:niceguyai@x00.ai" }
+      {
+        "label": "Support",
+        "href": "mailto:niceguyai@x00.ai"
+      }
     ],
     "primary": {
       "type": "button",
@@ -121,15 +117,18 @@
       "href": "https://t.me/+fO6bm68OcsJiMDk0"
     }
   },
-
   "footer": {
     "socials": {
       "instagram": "https://www.instagram.com/sasa.eth/",
       "telegram": "https://t.me/+fO6bm68OcsJiMDk0"
     }
   },
-
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   }
 }

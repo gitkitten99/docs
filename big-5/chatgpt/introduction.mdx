@@ -1,37 +1,28 @@
 ---
-title: ChatGPT
-description: An overview of OpenAI’s flagship conversational LLM.
+title: Intro
+description: A quick, relaxed intro to OpenAI’s talkative sidekick.
 ---
 
 # ChatGPT
 
-<Callout type="info" emoji="💡" title="TL;DR">
-ChatGPT is a conversational wrapper around OpenAI’s GPT-4o and GPT-3.5 models.  
-Think of it as a **universal text assistant**: Q&A, content drafting, coding help, or brainstorming—on demand.
+<Callout type="info" emoji="💬" title="In one sentence">
+ChatGPT is basically a super-well-read friend who can riff on almost any topic, day or night.  
 </Callout>
 
-## Key Capabilities
+## Why people like it
 
-| Feature                  | What it means                                                   |
-| ------------------------ | ---------------------------------------------------------------- |
-| Natural-language chat    | Context-aware dialogue—remembers prior turns in a session.       |
-| Multimodal (GPT-4o)      | Accepts text, images, or voice and can respond in kind.          |
-| Tool calling             | Can trigger custom functions / actions you expose via the API.   |
-| Code interpreter         | Sandbox for data analysis, Python execution, and file upload.    |
+- **Responsive & Multimodal** – The latest GPT-4o version can look at pictures, listen to audio, and reply in real time. :contentReference[oaicite:0]{index=0}  
+- **Available everywhere** – There’s a free tier, a Plus plan (~$20 USD/month), and even enterprise bundles for teams. :contentReference[oaicite:1]{index=1}  
+- **Great for “blank-page” moments** – Whether you need an outline, a first draft, or quick code hints, it jumps-starts the process.
 
-## How It Works
+## What you can do with it
 
-When you send a prompt:
+1. **Ask & learn** – “Explain quantum tunneling like I’m 12.”  
+2. **Draft & tweak** – “Give me three newsletter headline ideas.”  
+3. **Code & debug** – “Why is my Python loop so slow?”  
 
-1. The LLM **tokenizes** your text.  
-2. It predicts the *next* token, one after another, guided by parameters such as `temperature` and `top_p`.  
-3. The streaming response is returned to you in real time.
+*(Yes, it sometimes makes stuff up—double-check important facts.)*
 
-```bash title="Curl example"
-curl https://api.openai.com/v1/chat/completions \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -d '{
-    "model": "gpt-4o",
-    "messages": [{"role": "user","content": "Explain RAG in 2 sentences."}],
-    "temperature": 0.7
-  }'
+## Good to know
+
+> ChatGPT’s knowledge is current through April 2025, so it may not know about last night’s sports scores—unless you enable browsing.  
