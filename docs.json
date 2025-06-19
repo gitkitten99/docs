@@ -3,7 +3,9 @@
   "theme": "mint",
   "name": "WTF IS AI",
   "colors": {
-    "primary": "#1DA1F2"
+    "primary": "#1DA1F2",
+    "light": "#A4D9F9",
+    "dark": "#0d8ddb"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -90,10 +92,18 @@
       "href": "https://t.me/+fO6bm68OcsJiMDk0"
     }
   },
-  "footer": {
+   "footer": {
     "socials": {
       "instagram": "https://www.instagram.com/sasa.eth/",
       "telegram": "https://t.me/+fO6bm68OcsJiMDk0"
     }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   }
 }
