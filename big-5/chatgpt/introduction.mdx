@@ -1,0 +1,37 @@
+---
+title: ChatGPT
+description: An overview of OpenAI’s flagship conversational LLM.
+---
+
+# ChatGPT
+
+<Callout type="info" emoji="💡" title="TL;DR">
+ChatGPT is a conversational wrapper around OpenAI’s GPT-4o and GPT-3.5 models.  
+Think of it as a **universal text assistant**: Q&A, content drafting, coding help, or brainstorming—on demand.
+</Callout>
+
+## Key Capabilities
+
+| Feature                  | What it means                                                   |
+| ------------------------ | ---------------------------------------------------------------- |
+| Natural-language chat    | Context-aware dialogue—remembers prior turns in a session.       |
+| Multimodal (GPT-4o)      | Accepts text, images, or voice and can respond in kind.          |
+| Tool calling             | Can trigger custom functions / actions you expose via the API.   |
+| Code interpreter         | Sandbox for data analysis, Python execution, and file upload.    |
+
+## How It Works
+
+When you send a prompt:
+
+1. The LLM **tokenizes** your text.  
+2. It predicts the *next* token, one after another, guided by parameters such as `temperature` and `top_p`.  
+3. The streaming response is returned to you in real time.
+
+```bash title="Curl example"
+curl https://api.openai.com/v1/chat/completions \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+    "model": "gpt-4o",
+    "messages": [{"role": "user","content": "Explain RAG in 2 sentences."}],
+    "temperature": 0.7
+  }'
